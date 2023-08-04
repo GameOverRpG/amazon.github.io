@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}

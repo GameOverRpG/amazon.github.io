@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perguntas Paranormais</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pergunta 1</h1>
+    <p>Eu falo, mas não tenho boca. Eu ouço, mas não tenho ouvidos. Não tenho corpo, mas vivo com o vento. Quem sou eu?</p>
+    <input type="text" id="resposta1">
+
+    <h1>Pergunta 2</h1>
+    <p>... --- / .-. . ... .--. --- ... - .- ... / ... .. -- .--. .-.. . ... / -- .- ... / - . -. .... .- / -.-. . .-. - . --.. .- / --.- ..- . / .- / --. . -. - . / .--. . ... --.- ..- .. ... --- ..- / -- ..- .. - --- / ... --- -... .-. . / ...- --- -.-. / -.-. --- .-.. --- --.- ..- . / ... -.-. .--.</p>
+    <input type="text" id="resposta2">
+
+    <button onclick="verificarRespostas()">Enviar</button>
+  </div>
+
+  <script>
+    function verificarRespostas() {
+      var resposta1 = document.getElementById("resposta1").value.toLowerCase();
+      var resposta2 = document.getElementById("resposta2").value.toLowerCase();
+
+      if (resposta1 === "eco" && resposta2 === "scp") {
+        window.location.href = "pagina_parabens.html";
+      } else {
+        window.location.href = "pagina_tente_novamente.html";
+      }
+    }
+  </script>
+</body>
+</html>
